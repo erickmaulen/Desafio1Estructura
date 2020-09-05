@@ -187,7 +187,7 @@ def isVisited(list, state):
 
 
 ## Greedy Search
-def best_first(initial_state: Container):
+def greedy_solve(initial_state: Container):
     count = 0
     heap = []
     visited = []
@@ -241,15 +241,15 @@ cont4 = Container(
               [10, 13, 0, 0, 0], [18, 13, 13, 7, 0]]))
 
 
-res = best_first(cont)
+res = greedy_solve(cont)
 res.render()
 
-res = best_first(cont2)
+res = greedy_solve(cont2)
 res.render()
 
-res = best_first(cont3)
+res = greedy_solve(cont3)
 res.render()
 
-res = best_first(cont4)
+res = greedy_solve(cont4)
 res.render()
 
